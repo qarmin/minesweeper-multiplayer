@@ -57,7 +57,7 @@ public class GameGUI implements WindowListener {
         gameFrame.setLocationRelativeTo(null);
         gameFrame.addWindowListener(this);
         
-        Border pandingBorder = BorderFactory.createEmptyBorder(5,5,5,5);//留下空白
+        Border pandingBorder = BorderFactory.createEmptyBorder(5,5,5,5);
         
 
         Icon saperIcon = new ImageIcon("img/" + Block.imageResolution + "/Saper.png");

@@ -18,7 +18,7 @@ public class TopList {
         try {
             br = new BufferedReader(new FileReader(f));
             while ((tmpStr = br.readLine()) != null) {
-                allString += tmpStr + "="; //That means new line
+                allString += tmpStr + "="; //= to nowa linia
             }
             System.out.println(allString);
             br.close();

@@ -2,6 +2,12 @@ package server;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
+/*
+Autorzy:
+	Rafał Mikrut
+	Dawid Sobolewski
+	Patryk Hołyst
+*/
 
 public class ServerMultithreaded implements Runnable{
     protected int          serverPort   = 9999;
@@ -31,16 +37,6 @@ public class ServerMultithreaded implements Runnable{
     	toFile += "25;26,Multum;Jacek;Mina" + "=";
     	toFile += "62;22,Zoraw;Krotos;Mina" + "=";
     	TopList.writeToFile(toFile);
-    	
-    	
-    	
-    	
-    	///
-    	
-    	
-    	
-    	
-    	
     	
     	
         System.out.println("Serwer został otwarty na porcie " + serverPort) ;

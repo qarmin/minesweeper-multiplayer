@@ -1,4 +1,1 @@
-10;20,Qarmin;Phid;Mina
-42;25,Qrak;Roman;Mina
-25;26,Multum;Jacek;Mina
-62;22,Zoraw;Krotos;Mina
+0;ghrh;server.ClientThread@34694530;Wygrana;

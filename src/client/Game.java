@@ -1,5 +1,12 @@
 package client;
 
+/*
+Autorzy:
+	Rafał Mikrut
+	Dawid Sobolewski
+	Patryk Hołyst
+*/
+
 import javax.swing.*;
 
 
