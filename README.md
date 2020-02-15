@@ -1,17 +1,39 @@
 
 Instrukcja uruchomienia
 
-## Plik Jar
-Wyeksportowane pliki jar wystarczy uruchomić poprzez dwukrotne przyciśnięcie myszką, lecz z powodu pewnego błędu, w kliencie nie wyświetlają się obrazy/obrazki.
+Testowano na systemie Ubuntu 19.10 z OpenJDK 14, dlatego prawdopodobnie podobna konfiguracja będzie potrzebna do jego uruchomienia.
 
-Plik jar serwera to ServerMultiThreaded.java a klienta to ServerClient.java
+
+## Plik Jar
+### Uruchomienie poprzez dwuklik
+Wyeksportowane pliki jar wystarczy uruchomić poprzez dwukrotne przyciśnięcie myszką oczywiście po nadaniu praw do uruchomienia pliku(chmod +x Server.jar)
+
+Plik jar serwera to Server.jar a klienta to Client.jar
+
+
+Serwer nie posiada interfejsu graficznego, dlatego należy aby go wyłączyć, należy wyłączyć proces w menedżerze zadań/monitorze systemu.
+
+Gif z uruchomieniem:
+
+![jfile](https://user-images.githubusercontent.com/41945903/74589050-3d7d4d00-5002-11ea-88fa-9e5aac11971c.gif)
+
+
+### Uruchomienie przez terminla
+
+Drugim sposobem pokazanym na gifie jest uruchomienie gry poprzez terminal.
+
+Najpierw przy pomocy polecenia `java -jar Server.jar` uruchamiamy serwer(błędy o błędnym zapisie nie pokazują się w Eclipse), a potem w drugim terminalu uruchamiamy klienta poleceniem `java -jar Client.jar`
+
+Wszystko jest zawarte w tym gifie
+
+![jfile](https://user-images.githubusercontent.com/41945903/74588938-3a359180-5001-11ea-8488-7f160433e5cb.gif)
 
 
 ## Uruchomienie kodu źródłowego
 
 Kod źródłowy nie zawiera, żadnych zewnętrzych zależności, więc może być prosto uruchomiony na komputerze, tak jak jest to pokazane na gifie.
 
-Gif z uruchomieniem
+Gif z uruchomieniem(najlepiej uruchomić w nowym oknie)
 ![jfile](https://user-images.githubusercontent.com/41945903/74109506-527e5a00-4b84-11ea-8cb6-b80be73d80cd.gif)
 
 ## Jak działa gra?

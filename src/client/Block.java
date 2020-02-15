@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.net.URL;
 
 public class Block extends JButton implements MouseListener {
 
@@ -43,10 +44,14 @@ public class Block extends JButton implements MouseListener {
 			currentContent = value;
 			if (currentContent >= 1 && currentContent <= 8) {
 				setBackground(Color.decode("#777777"));
-				setIcon(new ImageIcon("img/" + imageResolution + "/" + currentContent + ".png"));
+				URL url =  Block.class.getResource("/" + imageResolution + "/" + currentContent + ".png");
+				setIcon(new ImageIcon(url));
+				//setIcon(new ImageIcon("img/" + imageResolution + "/" + currentContent + ".png")); // Nie działa podczas eksportu
 			} else if (currentContent == MINE) {
 				setBackground(Color.decode("#777777"));
-				setIcon(new ImageIcon("img/" + imageResolution + "/Mina.png"));
+				URL url =  Block.class.getResource("/" + imageResolution + "/Mina.png");
+				setIcon(new ImageIcon(url));
+				//setIcon(new ImageIcon("img/" + imageResolution + "/Mina.png"));
 			} else if (currentContent == 0) {
 				setBackground(Color.decode("#777777"));
 			} else {
@@ -93,8 +98,11 @@ public class Block extends JButton implements MouseListener {
 				if (e.getButton() == MouseEvent.BUTTON3) { // right click
 					if (haveFlag)
 						setIcon(null);
-					else
-						setIcon(new ImageIcon("img/" + imageResolution + "/Flaga.png"));
+					else {
+						URL url =  Block.class.getResource("/" + imageResolution + "/Flaga.png");
+						setIcon(new ImageIcon(url));
+						//setIcon(new ImageIcon("img/" + imageResolution + "/Flaga.png"));
+					}
 					haveFlag = !haveFlag;
 				}
 			}

@@ -3,6 +3,7 @@ package client;
 
 import java.io.IOException;
 import java.net.Socket;
+import java.net.URL;
 import java.net.UnknownHostException;
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -60,8 +61,10 @@ public class GameGUI implements WindowListener {
         Border pandingBorder = BorderFactory.createEmptyBorder(5,5,5,5);
         
 
-        Icon saperIcon = new ImageIcon("img/" + Block.imageResolution + "/Saper.png");
-        saper.setIcon(saperIcon);
+		URL url =  Block.class.getResource("/" + Block.imageResolution + "/Saper.png");
+        //Icon saperIcon = new ImageIcon("img/" + Block.imageResolution + "/Saper.png");
+        Icon saperIcon = new ImageIcon(url);
+		saper.setIcon(saperIcon);
         saper.setPreferredSize(new Dimension(40,40));
         saper.setMaximumSize(new Dimension(40,40));
         saper.setMinimumSize(new Dimension(40,40));
