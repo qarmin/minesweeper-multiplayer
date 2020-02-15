@@ -1,14 +1,19 @@
 
 Instrukcja uruchomienia
 
-Testowano na systemie Ubuntu 19.10 z OpenJDK 14, dlatego prawdopodobnie podobna konfiguracja będzie potrzebna do jego uruchomienia.
+Projekt stworzono na systemie Ubuntu 19.10 wraz z pomocą OpenJDK 14
+Plik jar serwera to `Server.jar` a klienta to `Client.jar`
 
+
+Na Windows 10 do testowania był używany AdoptOpenJDK 13(https://adoptopenjdk.net/) będący darmową alternatywą dla Java JDK
+Pliki wyeksportowane na Windowsie 10 mają kolejno nazwy `ServerWIN.jar` oraz `ClientWIN.jar`
 
 ## Plik Jar
+
+Podane sposoby przetestowane zostały zarówno na Linuxie jak i Windowsie
+
 ### Uruchomienie poprzez dwuklik
 Wyeksportowane pliki jar wystarczy uruchomić poprzez dwukrotne przyciśnięcie myszką oczywiście po nadaniu praw do uruchomienia pliku(chmod +x Server.jar)
-
-Plik jar serwera to Server.jar a klienta to Client.jar
 
 
 Serwer nie posiada interfejsu graficznego, dlatego należy aby go wyłączyć, należy wyłączyć proces w menedżerze zadań/monitorze systemu.
@@ -18,7 +23,7 @@ Gif z uruchomieniem:
 ![jfile](https://user-images.githubusercontent.com/41945903/74589050-3d7d4d00-5002-11ea-88fa-9e5aac11971c.gif)
 
 
-### Uruchomienie przez terminla
+### Uruchomienie przez terminal
 
 Drugim sposobem pokazanym na gifie jest uruchomienie gry poprzez terminal.
 
